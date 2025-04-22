@@ -16,10 +16,11 @@ namespace az204_blobdemo
             Console.WriteLine("\n\n Press enter to exit the sample application.");
             Console.ReadLine();
         }
+
         private static async Task ProcessAsync()
         {
             // 替換成你的 Azure Storage ConnectionString
-            string storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=_______________;AccountKey=wYSK_______________QA==;EndpointSuffix=core.windows.net";
+            string storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=_______________;AccountKey=____________________==;EndpointSuffix=core.windows.net";
             // Check whether the connection string can be parsed.
             CloudStorageAccount storageAccount;
             if (CloudStorageAccount.TryParse(storageConnectionString, out storageAccount))
